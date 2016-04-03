@@ -1,0 +1,23 @@
+{
+  "name": "chrome-dark-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "author": "Puranjay Jain <puranjay.jain@st.niituniversity.in>",
+  "description": "Syntax theme mimicking Chrome Developer Tools Dark Theme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark",
+    "chrome",
+    "dev-tools"
+  ],
+  "bugs": {
+    "url": "https://github.com/puranjayjain/chrome-dark-syntax/issues"
+  },
+  "homepage": "https://github.com/puranjayjain/chrome-dark-syntax#readme",
+  "repository": "https://github.com/puranjayjain/chrome-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
