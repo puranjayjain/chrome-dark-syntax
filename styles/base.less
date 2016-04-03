@@ -79,15 +79,26 @@ atom-text-editor, :host {
   }
 }
 
-atom-text-editor .search-results .marker .region,
-:host .search-results .marker .region {
+atom-text-editor .selection .region,
+:host .selection .region {
+  // fix to show search colour above the selected
+  z-index: -2;
+}
+
+:host .find-result .region,
+atom-text-editor .find-result .region,
+atom-text-editor::shadow .find-result .region {
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region,
-:host .search-results .marker.current-result .region {
+:host .find-result .region,
+atom-text-editor .current-result .region,
+atom-text-editor::shadow .current-result .region {
+  background-color: @syntax-result-marker-color-selected;
   border: 1px solid @syntax-result-marker-color-selected;
+  // fix to show search colour above the selected
+  z-index: -1;
 }
 
 .comment {
