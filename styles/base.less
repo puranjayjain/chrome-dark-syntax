@@ -27,6 +27,8 @@ atom-text-editor, :host {
     .line-number {
       &.cursor-line {
         position: relative;
+        // line height fix to reduce flash of line height increase
+        line-height: 1.4;
         border: 1px solid @syntax-gutter-margin-color-selected;
         border-right: none;
         border-left: none;
@@ -44,16 +46,16 @@ atom-text-editor, :host {
 
       // git diff colours
       // &.git-line-renamed: {
-      //   border-color-color: @syntax-color-renamed;
+      //   border-left-color: @syntax-color-renamed;
       // }
       &.git-line-added {
-        border-color-color: @syntax-color-added;
+        border-left-color: @syntax-color-added;
       }
       &.git-line-modified {
-        border-color-color: @syntax-color-modified;
+        border-left-color: @syntax-color-modified;
       }
-      &.git-line-removed {
-        border-color-color: darken(@syntax-color-removed, 10%);
+      &.git-line-removed:before {
+        border-left-color: darken(@syntax-color-removed, 10%);
       }
     }
   }
@@ -340,7 +342,7 @@ atom-text-editor .search-results .marker.current-result .region,
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
   &.heading {
-    color: @green;
+    color: @amber;//@green;
   }
 }
 
