@@ -9,3 +9,7 @@
 ## 0.3.0 - Added support for more Languages
 * less
 * scss/sass
+
+## 0.4.0 - Added object notation support
+* json
+* cson

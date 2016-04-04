@@ -173,8 +173,16 @@ atom-text-editor::shadow .current-result .region {
     color: darken(@red, 10%);
   }
 
-  &.parameter.function {
-    color: @dark-cyan;//@syntax-text-color;
+  &.parameter {
+    &.misc {
+      &.css {
+        color: @light-orange;
+      }
+    }
+
+    &.function {
+      color: @dark-cyan;//@syntax-text-color;
+    }
   }
 }
 
@@ -186,6 +194,25 @@ atom-text-editor::shadow .current-result .region {
 .string {
   color: @dark-orange;
 
+  &.quoted {
+    &.json, &.coffee {
+      color: @turquoise;
+
+      & + .keyword.operator.coffee {
+        // make an exception for all .string keys whose immediate parent is .value
+        & + .string.quoted.coffee {
+          color: @dark-white;
+        }
+      }
+
+      & + .structure.dictionary.value.json {
+        // make an exception for all .string keys whose immediate parent is .value
+        .string.quoted.json {
+          color: @dark-white;
+        }
+      }
+    }
+  }
 
   &.regexp {
     color: @cyan;
