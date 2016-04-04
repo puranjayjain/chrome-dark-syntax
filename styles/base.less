@@ -159,6 +159,11 @@ atom-text-editor::shadow .current-result .region {
 
   &.other {
     color: @dark-white;
+
+    &.less {
+      color: @dark-violet;
+    }
+
     &.property {
       color: @mustard;
     }
@@ -197,6 +202,10 @@ atom-text-editor::shadow .current-result .region {
 
 .punctuation {
   &.definition {
+    &.entity {
+      color: @dark-orange;
+    }
+
     &.comment {
       color: @light-gray;
     }
@@ -245,6 +254,14 @@ atom-text-editor::shadow .current-result .region {
     //   color: @blue;
     // }
   }
+
+  &.type {
+    &.property-name {
+      &.css {
+        color: @turquoise;
+      }
+    }
+  }
 }
 
 .entity {
@@ -272,10 +289,16 @@ atom-text-editor::shadow .current-result .region {
 
   &.name.tag {
     color: @dark-cyan;
+    &.css {
+      color: @magenta;
+    }
   }
 
   &.other.attribute-name {
     color: @cyan;
+    &.css {
+      color: @orange;
+    }
   }
 }
 
