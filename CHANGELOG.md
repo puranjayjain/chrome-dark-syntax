@@ -13,3 +13,6 @@
 ## 0.4.0 - Added object notation support
 * json
 * cson
+* with their tweaks to support better readability
+
+## 0.5.0 - Added coffescript support

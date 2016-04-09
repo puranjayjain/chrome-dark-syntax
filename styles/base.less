@@ -160,6 +160,14 @@ atom-text-editor::shadow .current-result .region {
   &.other {
     color: @dark-white;
 
+    &.readwrite {
+      &.instance {
+        &.coffee {
+          color: @dark-orange;
+        }
+      }
+    }
+
     &.less {
       color: @dark-violet;
     }
@@ -274,6 +282,10 @@ atom-text-editor::shadow .current-result .region {
   &.function  {
     color: @dark-white;
 
+    &.coffee {
+      color: @magenta;
+    }
+
     &.dom {
       color: @mustard;
     }
@@ -292,39 +304,53 @@ atom-text-editor::shadow .current-result .region {
 }
 
 .entity {
-  &.name.function {
-    color: @dark-white;//@blue;
-    &.constructor {
-      color: @mustard;
+  &.other {
+    &.inherited-class {
+      color: @green;
+    }
+
+    &.attribute-name {
+      color: @cyan;
+      &.css {
+        color: @orange;
+      }
     }
   }
-  &.name.type {
-    color: @dark-cyan;
-    // text-decoration: underline;
-  }
+  &.name {
+    &.function {
+      color: @dark-white;//@blue;
 
-  &.other.inherited-class {
-    color: @green;
-  }
-  &.name.class, &.name.type.class {
-    color: @light-orange;
-  }
+      &.coffee {
+        color: @dark-cyan;
+      }
 
-  &.name.section {
-    color: @blue;
-  }
-
-  &.name.tag {
-    color: @dark-cyan;
-    &.css {
-      color: @magenta;
+      &.constructor {
+        color: @mustard;
+      }
     }
-  }
 
-  &.other.attribute-name {
-    color: @cyan;
-    &.css {
-      color: @orange;
+    &.type {
+      color: @dark-cyan;
+      // text-decoration: underline;
+
+      &.class, &.object.coffee {
+        color: @light-orange;
+      }
+    }
+
+    &.class {
+      color: @light-orange;
+    }
+
+    &.section {
+      color: @blue;
+    }
+
+    &.tag {
+      color: @dark-cyan;
+      &.css {
+        color: @magenta;
+      }
     }
   }
 }
