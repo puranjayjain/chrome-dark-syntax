@@ -1,7 +1,7 @@
 {
   "name": "chrome-dark-syntax",
   "theme": "syntax",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "author": "Puranjay Jain <puranjay.jain@st.niituniversity.in>",
   "description": "Syntax theme mimicking Chrome Developer Tools Dark Theme",
   "keywords": [
