@@ -1,4 +1,6 @@
 # chrome-dark-syntax
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/puranjayjain/chrome-dark-syntax.svg)](https://greenkeeper.io/)
 Syntax theme mimicking Chrome Developer Tools Dark Theme
 
 ![Demo](https://raw.githubusercontent.com/puranjayjain/chrome-dark-syntax/master/demo.png)
