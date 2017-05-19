@@ -18,3 +18,7 @@ Syntax theme mimicking Chrome Developer Tools Dark Theme
 - cson
 
 *Note* - Other Languages will work with the theme but may work incorrectly add a pull request or a issue on the repository to get your language added.
+
+## Contributors
+
+* Vladimir Pirogov (@Angmor23) thanks for fixing depreated selector bug PR #3 
