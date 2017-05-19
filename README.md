@@ -21,4 +21,4 @@ Syntax theme mimicking Chrome Developer Tools Dark Theme
 
 ## Contributors
 
-* Vladimir Pirogov (@Angmor23) thanks for fixing depreated selector bug PR #3 
+* Vladimir Pirogov ([@Angmor23](https://github.com/Angmor23)) thanks for fixing deprecated selector bug PR #3 
